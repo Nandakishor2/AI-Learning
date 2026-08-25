@@ -2,6 +2,7 @@ import re
 
 def baseline_chunk(text: str, chunk_size: int = 350, overlap: int = 50) -> list[str]:
     """Strategy A: Naive fixed sliding-window chunker."""
+    text = text.replace('\r\n', '\n')
     chunks = []
     start = 0
     while start < len(text):
@@ -18,6 +19,7 @@ def structure_aware_chunk(text: str) -> list[str]:
     Splits by markdown headers while maintaining the header hierarchy,
     policy numbers, and keeping markdown eligibility tables fully intact.
     """
+    text = text.replace('\r\n', '\n')
     sections = re.split(r'\n(?=#{1,3}\s)', text)
     structured_chunks = []
     

@@ -23,11 +23,13 @@ EMBEDDING_DIM = 3072  # gemini-embedding-001 output dimension
 
 def setup_collections():
     for col_name in ["baseline_chunks", "structure_chunks"]:
-        if not qdrant_client.collection_exists(col_name):
-            qdrant_client.create_collection(
-                collection_name=col_name,
-                vectors_config=VectorParams(size=EMBEDDING_DIM, distance=Distance.COSINE),
-            )
+        if qdrant_client.collection_exists(col_name):
+            print(f"Deleting existing collection: {col_name}")
+            qdrant_client.delete_collection(col_name)
+        qdrant_client.create_collection(
+            collection_name=col_name,
+            vectors_config=VectorParams(size=EMBEDDING_DIM, distance=Distance.COSINE),
+        )
 
 def parse_frontmatter(content: str):
     """Extract YAML-style metadata block and body text."""
