@@ -1,0 +1,12 @@
+{"id": "Q01", "question": "What does HR-207 section 3.2 say about carry-over?", "expected_chunk_id": "struct_HR-207_APAC_2", "has_exact_token": true}
+{"id": "Q02", "question": "What is the probationary carry-over cap under section 3.2 in EMEA?", "expected_chunk_id": "struct_HR-207_EMEA_2", "has_exact_token": true}
+{"id": "Q03", "question": "Under HR-208 section 2.1, how many weeks of paid leave does a Category B employee receive?", "expected_chunk_id": "struct_HR-208_LATAM_1", "has_exact_token": true}
+{"id": "Q04", "question": "What GP medical certificate is mandated by HR-209 section 2.1 for absences exceeding 8 days?", "expected_chunk_id": "struct_HR-209_UK_1", "has_exact_token": true}
+{"id": "Q05", "question": "What is the carry-over forfeiture window specified in HR-207 Section 3.2?", "expected_chunk_id": "struct_HR-207_APAC_2", "has_exact_token": true}
+{"id": "Q06", "question": "What does section 2.1 say about the Carer's Conversion Cap?", "expected_chunk_id": "struct_HR-209_ANZ_1", "has_exact_token": true}
+{"id": "Q07", "question": "How much parental leave do primary caregivers get in North America?", "expected_chunk_id": "struct_HR-208_NA_1", "has_exact_token": false}
+{"id": "Q08", "question": "How many days of paid paternity leave do non-birthing parents receive in LATAM?", "expected_chunk_id": "struct_HR-208_LATAM_2", "has_exact_token": false}
+{"id": "Q09", "question": "What is the annual leave accrual rate per month for employees in APAC?", "expected_chunk_id": "struct_HR-207_APAC_1", "has_exact_token": false}
+{"id": "Q10", "question": "What is the maximum carry-over cap for Tier 4 staff with 5+ years of service?", "expected_chunk_id": "struct_HR-207_APAC_2", "has_exact_token": false}
+{"id": "Q11", "question": "What is the company reimbursement policy for personal home office internet?", "expected_chunk_id": "NOT_IN_CORPUS", "has_exact_token": false}
+{"id": "Q12", "question": "Under HR-999 section 1.0, what is the executive bonus vesting schedule?", "expected_chunk_id": "NOT_IN_CORPUS", "has_exact_token": true}

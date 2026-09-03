@@ -1,0 +1,169 @@
+{
+  "hit_rate_at_3": 0.8,
+  "hits": 8,
+  "total_valid": 10,
+  "p50_latency": 556.0201499902178,
+  "tally": {
+    "R": 2,
+    "G": 0,
+    "Not-In-Corpus": 2
+  },
+  "records": [
+    {
+      "id": "Q01",
+      "question": "What does HR-207 section 3.2 say about carry-over?",
+      "expected": "struct_HR-207_APAC_2",
+      "retrieved": [
+        "struct_HR-207_APAC_2",
+        "struct_HR-207_EMEA_2",
+        "struct_HR-207_EMEA_3"
+      ],
+      "label": "HIT",
+      "evidence": "Expected chunk struct_HR-207_APAC_2 found at rank 1.",
+      "latency_ms": 682.1118000079878
+    },
+    {
+      "id": "Q02",
+      "question": "What is the probationary carry-over cap under section 3.2 in EMEA?",
+      "expected": "struct_HR-207_EMEA_2",
+      "retrieved": [
+        "struct_HR-207_EMEA_4",
+        "struct_HR-207_EMEA_3",
+        "struct_HR-207_EMEA_2"
+      ],
+      "label": "HIT",
+      "evidence": "Expected chunk struct_HR-207_EMEA_2 found at rank 3.",
+      "latency_ms": 566.5905000059865
+    },
+    {
+      "id": "Q03",
+      "question": "Under HR-208 section 2.1, how many weeks of paid leave does a Category B employee receive?",
+      "expected": "struct_HR-208_LATAM_1",
+      "retrieved": [
+        "struct_HR-208_LATAM_2",
+        "struct_HR-208_NA_2",
+        "struct_HR-208_LATAM_3"
+      ],
+      "label": "R",
+      "evidence": "Expected struct_HR-208_LATAM_1, but dense retriever fetched ['struct_HR-208_LATAM_2', 'struct_HR-208_NA_2', 'struct_HR-208_LATAM_3'].",
+      "latency_ms": 522.1152000012808
+    },
+    {
+      "id": "Q04",
+      "question": "What GP medical certificate is mandated by HR-209 section 2.1 for absences exceeding 8 days?",
+      "expected": "struct_HR-209_UK_1",
+      "retrieved": [
+        "struct_HR-209_ANZ_3",
+        "struct_HR-209_UK_1",
+        "struct_HR-209_UK_2"
+      ],
+      "label": "HIT",
+      "evidence": "Expected chunk struct_HR-209_UK_1 found at rank 2.",
+      "latency_ms": 952.2600999916904
+    },
+    {
+      "id": "Q05",
+      "question": "What is the carry-over forfeiture window specified in HR-207 Section 3.2?",
+      "expected": "struct_HR-207_APAC_2",
+      "retrieved": [
+        "struct_HR-207_APAC_3",
+        "struct_HR-207_APAC_4",
+        "struct_HR-207_APAC_2"
+      ],
+      "label": "HIT",
+      "evidence": "Expected chunk struct_HR-207_APAC_2 found at rank 3.",
+      "latency_ms": 568.5003999969922
+    },
+    {
+      "id": "Q06",
+      "question": "What does section 2.1 say about the Carer's Conversion Cap?",
+      "expected": "struct_HR-209_ANZ_1",
+      "retrieved": [
+        "struct_HR-209_ANZ_2",
+        "struct_HR-209_UK_1",
+        "struct_HR-208_LATAM_1"
+      ],
+      "label": "R",
+      "evidence": "Expected struct_HR-209_ANZ_1, but dense retriever fetched ['struct_HR-209_ANZ_2', 'struct_HR-209_UK_1', 'struct_HR-208_LATAM_1'].",
+      "latency_ms": 554.5261999941431
+    },
+    {
+      "id": "Q07",
+      "question": "How much parental leave do primary caregivers get in North America?",
+      "expected": "struct_HR-208_NA_1",
+      "retrieved": [
+        "struct_HR-208_NA_1",
+        "struct_HR-208_NA_0",
+        "struct_HR-208_LATAM_2"
+      ],
+      "label": "HIT",
+      "evidence": "Expected chunk struct_HR-208_NA_1 found at rank 1.",
+      "latency_ms": 557.5140999862924
+    },
+    {
+      "id": "Q08",
+      "question": "How many days of paid paternity leave do non-birthing parents receive in LATAM?",
+      "expected": "struct_HR-208_LATAM_2",
+      "retrieved": [
+        "struct_HR-208_LATAM_3",
+        "struct_HR-208_LATAM_0",
+        "struct_HR-208_LATAM_2"
+      ],
+      "label": "HIT",
+      "evidence": "Expected chunk struct_HR-208_LATAM_2 found at rank 3.",
+      "latency_ms": 542.9970000404865
+    },
+    {
+      "id": "Q09",
+      "question": "What is the annual leave accrual rate per month for employees in APAC?",
+      "expected": "struct_HR-207_APAC_1",
+      "retrieved": [
+        "struct_HR-207_APAC_1",
+        "struct_HR-207_APAC_0",
+        "struct_HR-207_APAC_3"
+      ],
+      "label": "HIT",
+      "evidence": "Expected chunk struct_HR-207_APAC_1 found at rank 1.",
+      "latency_ms": 544.3574000382796
+    },
+    {
+      "id": "Q10",
+      "question": "What is the maximum carry-over cap for Tier 4 staff with 5+ years of service?",
+      "expected": "struct_HR-207_APAC_2",
+      "retrieved": [
+        "struct_HR-207_EMEA_3",
+        "struct_HR-207_APAC_2",
+        "struct_HR-207_EMEA_2"
+      ],
+      "label": "HIT",
+      "evidence": "Expected chunk struct_HR-207_APAC_2 found at rank 2.",
+      "latency_ms": 604.4505999889225
+    },
+    {
+      "id": "Q11",
+      "question": "What is the company reimbursement policy for personal home office internet?",
+      "expected": "NOT_IN_CORPUS",
+      "retrieved": [
+        "struct_HR-207_EMEA_0",
+        "struct_HR-209_ANZ_1",
+        "struct_HR-207_EMEA_1"
+      ],
+      "label": "Not-In-Corpus",
+      "evidence": "Query target does not exist in policy corpus; retrieved adjacent chunks: ['struct_HR-207_EMEA_0', 'struct_HR-209_ANZ_1']",
+      "latency_ms": 552.2282000165433
+    },
+    {
+      "id": "Q12",
+      "question": "Under HR-999 section 1.0, what is the executive bonus vesting schedule?",
+      "expected": "NOT_IN_CORPUS",
+      "retrieved": [
+        "struct_HR-207_EMEA_4",
+        "struct_HR-207_APAC_4",
+        "struct_HR-208_LATAM_2"
+      ],
+      "label": "Not-In-Corpus",
+      "evidence": "Query target does not exist in policy corpus; retrieved adjacent chunks: ['struct_HR-207_EMEA_4', 'struct_HR-207_APAC_4']",
+      "latency_ms": 541.9051999924704
+    }
+  ]
+}
