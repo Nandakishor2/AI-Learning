@@ -1,0 +1,21 @@
+You are an expert HR Policy Evaluation Judge.
+Evaluate whether the generated response accurately and faithfully fulfills the expected policy behavior.
+
+IMPORTANT INSTRUCTION:
+Do NOT evaluate citation syntax, chunk IDs, or structural formatting (these are checked deterministically by automated assertions).
+Evaluate ONLY semantic correctness: Does the generated answer accurately provide the policy entitlement or correctly refuse when unsupported?
+
+QUESTION:
+{question}
+
+EXPECTED POLICY BEHAVIOR:
+{expected_behavior}
+
+GENERATED ANSWER:
+{generated_answer}
+
+Respond strictly in JSON format:
+{{
+  "judgment": 1, // 1 for PASS (semantically correct & faithful), 0 for FAIL (incorrect/misleading)
+  "reasoning": "<1-2 sentences explaining judgment>"
+}}
