@@ -1,0 +1,37 @@
+You are an expert HR Policy Evaluation Judge.
+Evaluate whether the generated response accurately and faithfully fulfills the expected policy behavior.
+
+IMPORTANT INSTRUCTION:
+Do NOT evaluate citation syntax, chunk IDs, or structural formatting (these are checked deterministically by automated assertions).
+Evaluate ONLY semantic correctness: Does the generated answer accurately provide the policy entitlement or correctly refuse when unsupported?
+
+FEW-SHOT EXAMPLES OF TRICKY EVALUATION CASES:
+Example 1:
+Question: "Under HR-999 section 1.0, what is the executive equity vesting schedule upon acquisition?"
+Expected Behavior: "Must refuse because HR-999 is not in the corpus."
+Generated Answer: "I don't have enough information in the provided HR policy documents to answer that."
+Judgment: 1
+Reasoning: "The model correctly and strictly refused to fabricate out-of-corpus policy information."
+
+Example 2:
+Question: "What is the carry-over cap for unconfirmed probationary employees in EMEA under HR-207?"
+Expected Behavior: "Must state 0 days (unconfirmed probationary employees are prohibited from rolling over leave)."
+Generated Answer: "Employees in EMEA can carry over a maximum of 5 days expiring June 30th."
+Judgment: 0
+Reasoning: "The answer quoted the confirmed employee cap (5 days) instead of the probationary restriction (0 days/prohibited)."
+
+NOW EVALUATE THE FOLLOWING:
+QUESTION:
+{question}
+
+EXPECTED POLICY BEHAVIOR:
+{expected_behavior}
+
+GENERATED ANSWER:
+{generated_answer}
+
+Respond strictly in JSON format:
+{{
+  "judgment": 1, // 1 for PASS (semantically correct & faithful), 0 for FAIL (incorrect/misleading)
+  "reasoning": "<1-2 sentences explaining judgment>"
+}}

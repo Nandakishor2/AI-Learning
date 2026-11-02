@@ -1,0 +1,5 @@
+Date: 2026-09-15
+Planned Change: Incorporating 2 few-shot demonstration examples into Judge V2 prompt to calibrate refusal detection and sub-clause table lookups.
+Baseline Agreement: 72.0%
+Expected Agreement: >= 96.0%
+Success Threshold: Human-Judge agreement reaches at least 92.0%.
