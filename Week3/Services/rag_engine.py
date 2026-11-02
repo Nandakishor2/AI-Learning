@@ -10,7 +10,7 @@ sys.path.append(str(Path(__file__).resolve().parent.parent))
 load_dotenv()
 
 client = genai.Client(api_key=os.environ.get("GEMINI_API_KEY"))
-qdrant_client = QdrantClient(url="http://localhost:6333")
+qdrant_client = QdrantClient(url="http://localhost:6333", check_compatibility=False)
 
 SYSTEM_INSTRUCTION = """
 You are an AI People Operations Assistant. Your task is to answer employee leave policy questions STRICTLY and SOLELY based on the provided policy context snippets.
