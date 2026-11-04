@@ -216,5 +216,5 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+# Ignore all qdrant_storage directories anywhere in the repository
 qdrant_storage/
-Week*/qdrant_storage/
